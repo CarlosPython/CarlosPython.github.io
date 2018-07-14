@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="HEXO," />
 
 
 
@@ -81,13 +81,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Minimalist">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="通过HEXO迅速搭建属于自己的博客是一件很开心很有价值的事情。开心在于，自己可以按喜好定制界面风格，价值在于拥有了一个可以输出的地方。 搭建环境Hexo是目前很流行的博客框架，我选择了它。对应的同类可能还有很多如Jekyll(ruby)，Pelican(python)，Hexo(javascript)。各有各的好，但缘分这东西谁说的准。Nodejs是一个基于 Chrome V8 引擎的 JavaS">
+<meta name="keywords" content="HEXO">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用Hexo部署到Github建立极简博客">
+<meta property="og:url" content="http://yoursite.com/2018/07/13/用Hexo部署到Github建立极简博客/index.html">
 <meta property="og:site_name" content="Minimalist">
+<meta property="og:description" content="通过HEXO迅速搭建属于自己的博客是一件很开心很有价值的事情。开心在于，自己可以按喜好定制界面风格，价值在于拥有了一个可以输出的地方。 搭建环境Hexo是目前很流行的博客框架，我选择了它。对应的同类可能还有很多如Jekyll(ruby)，Pelican(python)，Hexo(javascript)。各有各的好，但缘分这东西谁说的准。Nodejs是一个基于 Chrome V8 引擎的 JavaS">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-07-14T07:42:48.260Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Minimalist">
+<meta name="twitter:title" content="用Hexo部署到Github建立极简博客">
+<meta name="twitter:description" content="通过HEXO迅速搭建属于自己的博客是一件很开心很有价值的事情。开心在于，自己可以按喜好定制界面风格，价值在于拥有了一个可以输出的地方。 搭建环境Hexo是目前很流行的博客框架，我选择了它。对应的同类可能还有很多如Jekyll(ruby)，Pelican(python)，Hexo(javascript)。各有各的好，但缘分这东西谁说的准。Nodejs是一个基于 Chrome V8 引擎的 JavaS">
 
 
 
@@ -117,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/07/13/用Hexo部署到Github建立极简博客/"/>
 
 
 
 
 
-  <title>Minimalist</title>
+  <title>用Hexo部署到Github建立极简博客 | Minimalist</title>
   
 
 
@@ -146,8 +151,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -240,9 +244,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -272,9 +276,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/07/13/用Hexo部署到Github建立极简博客/" itemprop="url">用Hexo部署到Github建立极简博客</a></h1>
+          <h1 class="post-title" itemprop="name headline">用Hexo部署到Github建立极简博客</h1>
         
 
         <div class="post-meta">
@@ -334,9 +336,7 @@
       
 
       
-        
-          
-            <p>通过HEXO迅速搭建属于自己的博客是一件很开心很有价值的事情。开心在于，自己可以按喜好定制界面风格，价值在于拥有了一个可以输出的地方。</p>
+        <p>通过HEXO迅速搭建属于自己的博客是一件很开心很有价值的事情。开心在于，自己可以按喜好定制界面风格，价值在于拥有了一个可以输出的地方。</p>
 <h2 id="搭建环境"><a href="#搭建环境" class="headerlink" title="搭建环境"></a>搭建环境</h2><p><a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a>是目前很流行的博客框架，我选择了它。对应的同类可能还有很多如Jekyll(ruby)，Pelican(python)，Hexo(javascript)。各有各的好，但缘分这东西谁说的准。<br><a href="https:/nodejs.org" target="_blank" rel="noopener">Nodejs</a>是一个基于 Chrome V8 引擎的 JavaScript 运行环境，它的npm是全球最大的开源库生态系统。第一次见，好厉害的样子。<br><a href="https:/git-scm.com" target="_blank" rel="noopener">Git</a>是目前世界上最先进的分布式版本控制系统（没有之一），对应的是集中式版本控制系统 （CSV、SVN)。<br>上面三个东西就是需要我们安装到本地的基础三件套。</p>
 <h4 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h4><p>Windows: Download &amp; install <a href="https://git-scm.com/download/win" target="_blank" rel="noopener">git</a></p>
 <h4 id="安装Nodejs"><a href="#安装Nodejs" class="headerlink" title="安装Nodejs"></a>安装Nodejs</h4><p>先安装<a href="https://github.com/coreybutler/nvm-windows" target="_blank" rel="noopener">nvm</a>，这是Nodejs版本管理器。也可参考<a href="https://www.runoob.com/nodejs/nodejs-install-setup.html" target="_blank" rel="noopener">RUNOOB.COM</a>的安装。</p>
@@ -362,8 +362,6 @@
 </ul>
 <h2 id="Ending"><a href="#Ending" class="headerlink" title="Ending"></a>Ending</h2><p>Happy posting!</p>
 
-          
-        
       
     </div>
     
@@ -378,152 +376,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/13/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="CarlosChen">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Minimalist">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/07/13/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-13T12:26:17+08:00">
-                2018-07-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/HEXO/" rel="tag"># HEXO</a>
           
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/07/13/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/13/hello-world/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/07/13/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
       
     </footer>
   </div>
@@ -533,10 +415,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -544,6 +427,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -564,8 +454,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -643,6 +542,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#搭建环境"><span class="nav-number">1.</span> <span class="nav-text">搭建环境</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装Git"><span class="nav-number">1.0.1.</span> <span class="nav-text">安装Git</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装Nodejs"><span class="nav-number">1.0.2.</span> <span class="nav-text">安装Nodejs</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装Hexo"><span class="nav-number">1.0.3.</span> <span class="nav-text">安装Hexo</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#操作Hexo完成博客创建"><span class="nav-number">2.</span> <span class="nav-text">操作Hexo完成博客创建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#可能会遇到的问题解决"><span class="nav-number">3.</span> <span class="nav-text">可能会遇到的问题解决</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#进阶方向"><span class="nav-number">4.</span> <span class="nav-text">进阶方向</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Ending"><span class="nav-number">5.</span> <span class="nav-text">Ending</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -790,6 +705,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
