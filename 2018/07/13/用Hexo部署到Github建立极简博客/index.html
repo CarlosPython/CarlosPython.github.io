@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Minimalist">
 <meta property="og:description" content="通过HEXO迅速搭建属于自己的博客是一件很开心很有价值的事情。开心在于，自己可以按喜好定制界面风格，价值在于拥有了一个可以输出的地方。 搭建环境Hexo是目前很流行的博客框架，我选择了它。对应的同类可能还有很多如Jekyll(ruby)，Pelican(python)，Hexo(javascript)。各有各的好，但缘分这东西谁说的准。Nodejs是一个基于 Chrome V8 引擎的 JavaS">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-07-14T07:42:48.260Z">
+<meta property="og:updated_time" content="2018-07-15T01:34:01.113Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用Hexo部署到Github建立极简博客">
 <meta name="twitter:description" content="通过HEXO迅速搭建属于自己的博客是一件很开心很有价值的事情。开心在于，自己可以按喜好定制界面风格，价值在于拥有了一个可以输出的地方。 搭建环境Hexo是目前很流行的博客框架，我选择了它。对应的同类可能还有很多如Jekyll(ruby)，Pelican(python)，Hexo(javascript)。各有各的好，但缘分这东西谁说的准。Nodejs是一个基于 Chrome V8 引擎的 JavaS">
@@ -399,7 +399,14 @@
 <p>基本设置完成后，就可以用 <code>$ hexo s</code>在<a href="http://localhost:4000/预览一下改动后的效果了。针对主题的一些细节优化升级可以后面再处理。" target="_blank" rel="noopener">http://localhost:4000/预览一下改动后的效果了。针对主题的一些细节优化升级可以后面再处理。</a><br>5.布署博客到github<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm i -s hexo-deployer-git  <span class="comment">#安装hexo-deploy-git</span></span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure></p>
 <p>期间第一次用，会需要验证登陆git，照常登陆就OK。此时刷新一下，就可以看到你的博客在git域名了，比如我的https：//CarlosPython.github.io<br>6.创建一个博客文章试试<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new postname <span class="comment">#创建以postname为名的.md文件</span></span><br></pre></td></tr></table></figure></p>
 <p>用Markdown编辑器就可以写博客了，我用的是sublime 3。<br>最后上传到git<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure></p>
-<h2 id="可能会遇到的问题解决"><a href="#可能会遇到的问题解决" class="headerlink" title="可能会遇到的问题解决"></a>可能会遇到的问题解决</h2><p>1.<code>$ hexo s</code>预览时提示4000端口被占用。我是直接退出gitbash再开就ok了，网上说要改端口什么的觉得麻烦。<br>2.中文title 显示乱码。语言改为中文的对应格式<br>3.其它的不知道什么鬼的。直接删除文件夹从来，有点粗暴但很管用，很多时候刚用修改或执行一些步骤理解不到位就会报错，试了几次没法就直接重来一次。</p>
+<h2 id="可能会遇到的问题解决"><a href="#可能会遇到的问题解决" class="headerlink" title="可能会遇到的问题解决"></a>可能会遇到的问题解决</h2><p>1.<code>$ hexo s</code>预览时提示4000端口被占用。我是直接退出gitbash再开就ok了，网上说要改端口什么的觉得麻烦。<br>2.中文title 显示乱码。语言改为中文的对应格式<br>3.无法Ping通Github。Push的时候报错如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ git push -u orgin master</span><br><span class="line">ssh: Could not resolve hosname github.com:Temporary fail <span class="keyword">in</span> name resolution</span><br><span class="line">fatal: Could not <span class="built_in">read</span> from remote repository.</span><br><span class="line"></span><br><span class="line">Please make sure you have the correct access rights </span><br><span class="line">and the repository exists.</span><br></pre></td></tr></table></figure></p>
+<p>解决： ctrl+r输入cmd调出命令提示符，ping一下github.com。 会显示 Ping <code>请求找不到主机github.com。请检查该名称，然后重试。</code>这个时候需要在host文件作个修改</p>
+<blockquote>
+<p>hosts文件路径：  C:\Windows\System32\drivers\etc<br>右键-属性-安全-编辑，选中当前电脑登录的用户，给自己最高权限，确认。用记事本打开后在最后一行加：</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">192.30.253.113    github.com</span><br><span class="line">192.30.252.131 github.com</span><br><span class="line">185.31.16.185 github.global.ssl.fastly.net</span><br><span class="line">74.125.237.1 dl-ssl.google.com</span><br><span class="line">173.194.127.200 groups.google.com</span><br><span class="line">192.30.252.131 github.com</span><br><span class="line">185.31.16.185 github.global.ssl.fastly.net</span><br><span class="line">74.125.128.95 ajax.googleapis.com</span><br></pre></td></tr></table></figure>
+<p>保存，然后再ping,发现就有数据了。</p>
+<p>3.其它的不知道什么鬼的。直接删除文件夹从来，有点粗暴但很管用，很多时候刚用修改或执行一些步骤理解不到位就会报错，试了几次没法就直接重来一次。</p>
 <h2 id="进阶方向"><a href="#进阶方向" class="headerlink" title="进阶方向"></a>进阶方向</h2><ul>
 <li>Hexo主题优化进阶</li>
 <li>Github绑定自己的域名</li>
@@ -445,6 +452,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/07/14/Markdown文本写作/" rel="prev" title="Markdown文本写作">
+                Markdown文本写作 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -528,7 +539,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -541,7 +552,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
