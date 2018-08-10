@@ -94,36 +94,6 @@
   </entry>
   
   <entry>
-    <title>关于Urllib的基础用法</title>
-    <link href="http://yoursite.com/2018/07/19/%E5%85%B3%E4%BA%8EUrllib%E7%9A%84%E5%9F%BA%E7%A1%80%E7%94%A8%E6%B3%95/"/>
-    <id>http://yoursite.com/2018/07/19/关于Urllib的基础用法/</id>
-    <published>2018-07-19T03:05:33.000Z</published>
-    <updated>2018-07-30T08:14:14.045Z</updated>
-    
-    <content type="html"><![CDATA[<p> URLLIB 是Python 的内置HTTP请求库包含四个模块：</p><ul><li>Request 模拟发送请求</li></ul><ul><li>Error 异常处理</li><li>Parse 工具模块 处理URL</li><li>Robotparser 识别判断ROBOTS.TXT</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt; URLLIB 是Python 的内置HTTP请求库包含四个模块：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Request 模拟发送请求&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;Error 异常处理&lt;/li&gt;
-&lt;li&gt;Parse 工具模块 处理URL&lt;/li&gt;
-&lt;li&gt;Robotpars
-      
-    
-    </summary>
-    
-    
-      <category term="Urllib" scheme="http://yoursite.com/tags/Urllib/"/>
-    
-  </entry>
-  
-  <entry>
     <title>HTTP基本原理</title>
     <link href="http://yoursite.com/2018/07/18/HTTP%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/"/>
     <id>http://yoursite.com/2018/07/18/HTTP基本原理/</id>
