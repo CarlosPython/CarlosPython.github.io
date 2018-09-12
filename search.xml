@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2018%2F09%2F12%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[Google Search的一些高级指令]]></title>
     <url>%2F2018%2F09%2F11%2FGoogle%20Search%E7%9A%84%E4%B8%80%E4%BA%9B%E9%AB%98%E7%BA%A7%E6%8C%87%E4%BB%A4%2F</url>
     <content type="text"><![CDATA[如果说互联网时代必须要掌握的一项技能是什么?我觉得是主动获取信息的能力。生活中工作中我们遇到的问题80%的问题是别人解决过了的，我们通过search就可以获取、参考、使用，剩下的20%需要我们进行多次的深入research，也就是整合研究。这里让我来整理一下通过谷歌高级指令进行搜索的一些指令，帮助search更高效。1.双引号完全匹配，按关键词顺序进行搜索。！QuotationMarks 2.减号对搜索结果进行筛选。减号与前一个关键词之间一定要有一个空格，与后一个关键词之间一定不能有空格。搜索结果为，匹配前一个关键词但不匹配后一个关键词的结果。！MinusSign 3.使用无痕搜索快捷键 Ctrl+Shift+N！PrivatlySearch 4.星号进行模糊匹配！Asterisk 5.related:查询与所给的网站类似的网站，它会返回Google认为的可能和你提供的网站类似的其他网站。 6.sitesite:是SEO最熟悉的高级搜索指令，用来搜索某个域名下的所有文件。指定搜索的某个网站。例：site:xiaomi.com 7.filetype指定搜索的文件类型。例：how to learn python filetype:pdf 8.intitle / inurl在结果的标题/url中包含关键词，一次只能搜索一个关键词。 9.allintile/allinurl在结果的标题/url中包含所有关键词！allintile 10.define返回字典解释，和相关解释的网页！Define 11.xx in yy单位换算，如kg in lbs 12.link查询链接到这个url的页面如：link:xiaomi.com，会返回小米网所有外部链接。从其它页面指向小米网。！link 以上，为较常用的指令，快用起来吧。]]></content>
@@ -60,6 +55,11 @@
       <tags>
         <tag>电商 ，流动性</tag>
       </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2018%2F07%2F17%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
   </entry>
   <entry>
     <title><![CDATA[Python学习回顾]]></title>

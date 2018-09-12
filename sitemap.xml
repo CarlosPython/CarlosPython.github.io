@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2018/07/17/hello-world/</loc>
+    
+    <lastmod>2018-09-12T07:56:09.236Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2018/09/11/Google%20Search%E7%9A%84%E4%B8%80%E4%BA%9B%E9%AB%98%E7%BA%A7%E6%8C%87%E4%BB%A4/</loc>
     
     <lastmod>2018-09-12T03:27:23.524Z</lastmod>
@@ -82,13 +89,6 @@
     <loc>http://yoursite.com/about/index.html</loc>
     
     <lastmod>2018-07-14T08:15:46.529Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/09/12/hello-world/</loc>
-    
-    <lastmod>2018-07-14T07:43:35.024Z</lastmod>
     
   </url>
   
