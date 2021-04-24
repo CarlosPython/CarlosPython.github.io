@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2021-04-24T07:24:08.389Z</updated>
+  <updated>2021-04-24T08:31:42.430Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,20 +21,24 @@
     <link href="http://yoursite.com/2021/04/24/back/"/>
     <id>http://yoursite.com/2021/04/24/back/</id>
     <published>2021-04-24T07:22:20.000Z</published>
-    <updated>2021-04-24T07:24:08.389Z</updated>
+    <updated>2021-04-24T08:31:42.430Z</updated>
     
-    <content type="html"><![CDATA[<p>Test  测试回家</p>]]></content>
+    <content type="html"><![CDATA[<p>Test  测试回家<br>go back to home always needer to wirightekekekekk</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;Test  测试回家&lt;/p&gt;
+        &lt;p&gt;Test  测试回家&lt;br&gt;go back to home always needer to wirightekekekekk&lt;/p&gt;
 
       
     
     </summary>
     
+      <category term="ABC" scheme="http://yoursite.com/categories/ABC/"/>
+    
+    
+      <category term="Test" scheme="http://yoursite.com/tags/Test/"/>
     
   </entry>
   
